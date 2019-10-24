@@ -1,0 +1,34 @@
+[
+    {
+      "id":1,
+      "artist":"Tyler The Creator",
+      "name":"SEE YOU AGAIN",
+      "releasedate":"21 July 2017",
+      "album":"Flower Boy",
+      "genre":"‎Hip-Hop/Jazz rap"
+    },
+    {
+       "id":2,
+       "artist":"Tyler The Creator",
+       "name":"RUNNING OUT OF TIME",
+       "releasedate":"17 May 2019",
+       "album":"IGOR",
+       "genre":"Hip-Hop/Rap"
+    },
+    {
+      "id":3,
+      "artist":"Tyler The Creator",
+      "name":"A BOY IS A GUN",
+      "releasedate":"17 May 2019",
+      "album":"IGOR",
+      "genre":"Hip-Hop/Rap"
+    },
+    {
+      "id":4,
+      "artist":"Tyler The Creator",
+      "name":"Yonkers",
+      "releasedate":"14 February 2011",
+      "album":"Goblin",
+      "genre":"Alternative Rap"
+    }
+  ]

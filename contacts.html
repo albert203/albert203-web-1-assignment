@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name= "viewport" content= "width=device-width">
+	<meta name= "description" content= "Affordable and professional web design">
+	<meta name= "keywords" content= "web design, affordable web design,professional web design">
+	<meta name= "author" content="Albert Jordaan">
+
+	<title>Acme Web Design | Services</title>
+	<link rel="stylesheet" href="assets/css/updatedstyle.css">
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="branding">
+				<!--SPAN IS AN INLINE ELEMENT, it allows to split text and adjust individually-->
+				<h1><span class="highlight">Albany</span> Music Reviews</h1>
+			</div>
+			<nav>
+                    <ul>
+                        <!-- The current class within css highlights the currently chosen page title-->
+                        <li class="current"><a href="index.html">Home</a></li>
+    
+                        <!--dropdown 1-->
+                        <li class="dropdown"><a href="#">New Music</a>
+                            <ul class="dropdown-content">
+                                <li><a href="itempage1.html">Rap</a></li>
+                                <li><a href="#">hip hop (coming soon)</a></li>
+                            </ul>
+                        </li>
+                        
+    
+                        <!--dropdown 2-->
+                        <li class="dropdown"><a href="#">Trending Music</a>
+                            <ul class="dropdown-content">
+                                <li><a href="itempage2.html">Tyler The Creator</a></li>
+                                <li><a href="#">J. Cole (coming soon)</a></li>
+                                <li><a href="#">Drake (coming soon)</a></li>
+                            </ul>
+                        </li>
+                        
+    
+                        <li><a href="contacts.html">Contacts</a></li>
+                    </ul>
+                </nav>
+		</div>
+	</header>
+
+	
+
+	<section id="newsletter">
+		<div class= "container">
+			<h1>Subscribe to Our Music Newsletter</h1>
+		
+		<form>
+			<input type="email" placeholder="Enter Email...">
+			<button type="submit" class="button1">Subscribe</button>
+		</form>
+		</div>
+	</section>
+
+	<section id="main">
+		<div class="container">
+			<article id="main-col">
+				<ul id="services">
+					<h3 id="contact-title">Our Contact Board</h3>
+					<li>
+						<h3 id="sub-contact-title" >Our Company</h3>
+						<p>
+							Albany Music Reviews provides the most recent news and reviews straight to your door or local store.
+							Be sure to contact us on page to the right if you have any business matters you would like to discuss with us
+							or if you have any inquiries.<br/><br/>Head Advisory of Albany Music Reviews,
+							<span id="headquote"> <br/> - Mark Florence.</span>
+						</p>
+					</li>
+				</ul>
+			</article>
+			
+		<aside id="sidebar">
+			<div class="dark">
+				<h3>Contact Us</h3>
+				<form class="quote" method="" action="">
+					<div>
+						<!-- <br> is a line break -->
+						<label>First Name</label><br>
+						<input id= "firstName" type="Name" placeholder="Enter First Name">
+					</div>
+
+					<div>
+						<label>Phone Number</label><br>
+						<input id= "PhoneNumber" type="Name" placeholder="Enter Phone Number">
+					</div>
+
+					<div>
+							<label>Email</label><br>
+							<input id="emailAddress" type="Email" placeholder="Enter Email Address">
+					</div>
+						<button type="submit" id="server-button">Send</button>
+					
+				</form>
+            </div>
+            
+            <div class="dark">
+            <h3>Post A Comment</h3>
+                <form class="quote" method="POST" action="">
+                    <div>
+                    	<!-- <br/> is a line break -->
+                    	<label>First Name</label><br/>
+                        <input id= "firstName2" type="Name" placeholder="Enter First Name">
+                    </div>
+						
+					<div>
+						<label>Phone Number</label><br>
+                        <input id= "PhoneNumber" type="Name" placeholder="Enter Phone Number">
+                    </div>
+                            
+                    <div>
+                    	<label>Email</label><br>
+                        <input id="emailAddress" type="Email" placeholder="Enter Email Address">
+					</div>
+					
+                    <div> 
+                        <label>Message</label>
+                        <textarea id="comment-area"></textarea>
+                    </div>
+                    <button type="submit" id="server-button2">Send</button>
+                
+                <h1 class ="todos-subtitle">Recieved Message</h1>
+				<div id= "comments"></div>
+				</form>
+			</div>
+		</aside>
+	</section>
+	
+	<footer>
+		<p>Acme Web Design, Copyright &copy; 2019</p>
+	</footer>
+	<script src="assets/js/comment.js"></script>
+	<script src="assets/js/submitmsg.js"></script>
+</body>
+</html>

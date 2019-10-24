@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name= "viewport" content= "width=device-width">
+	<meta name= "description" content= "Affordable and professional web design">
+	<meta name= "keywords" content= "web design, affordable web design,professional web design">
+	<meta name= "author" content="Albert Jordaan">
+
+	<title>Albany Music Reviews | Trending Music | Tyler The Creator</title>
+
+	<link id="css" rel="stylesheet" type="text/css" href="assets/css/updatedstyle.css">
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="branding">
+
+				<!--SPAN IS AN INLINE ELEMENT, it allows to split text and adjust individually-->
+				<img id="logo" src="assets/img/logo.png" alt=err>
+				<h1><span class="highlight">Albany</span> Music Reviews</h1>
+			</div>
+
+			<nav>
+				<ul>
+					<!-- The current class within css highlights the currently chosen page title-->
+					<li class="current"><a href="index.html">Home</a></li>
+
+					<!--dropdown 1-->
+					<li class="dropdown"><a href="#">New Music</a>
+						<ul class="dropdown-content">
+							<li><a href="itempage1.html">Rap</a></li>
+							<li><a href="#">hip hop (coming soon)</a></li>
+						</ul>
+					</li>
+					
+
+					<!--dropdown 2-->
+					<li class="dropdown"><a href="#">Trending Music</a>
+						<ul class="dropdown-content">
+							<li><a href="itempage2.html">Tyler The Creator</a></li>
+							<li><a href="#">J. Cole (coming soon)</a></li>
+							<li><a href="#">Drake (coming soon)</a></li>
+						</ul>
+					</li>
+					
+
+					<li><a href="contacts.html">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<section id="newsletter">
+		<div class= "container">
+                <h1>Subscribe to Our Free Music Newsletter</h1>
+		
+        <form method="post" action="#">
+			<input type="email" placeholder="Enter Email...">
+			<button type="submit" class="button1">Subscribe</button>
+		</form>
+		</div>
+	</section>
+	<h3 id = "table-title">Trending music from artists & info</h3>
+		<table id= "rwd-table">
+				<thead id="table-heading">
+						<th>Song ID</th>
+						<th>Artist</th>
+						<th>Name Of Song</th>
+						<th>Release Date</th>
+						<th>Album</th>
+						<th>Genre</th>
+				</thead>
+		</table>
+<section id="rating-container">
+	<h3 class="table-title">Rate other 🔥 Rap Songs<h3>
+	<div class="ratingboxes">
+		<td>
+			<h2>Homicide</h2>
+			<h4>by Eminem, Logic</h4>
+			<div id="rating">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</td>
+	</div>
+
+	<div class="ratingboxes">
+		<td>
+			<h2>A Lot</h2>
+			<h4>by 21 Savage, J. Cole</h4>
+			<div id="rating2">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</td>
+	</div>
+
+	<div class="ratingboxes">
+		<td>
+			<h2>Money in the grave</h2>
+			<h4>by Drake, Rick Ross</h4>
+			<div id="rating3">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</td>
+	</div>
+
+	<div class="ratingboxes">
+		<td>
+			<h2>Highest in the Room</h2>
+			<h4>by Travis Scott</h4>
+			<div id="rating4">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</td>
+	</div>
+</section>	
+	
+		
+	
+	
+	<div class="outer">
+		<div class="dark">
+			<h3>Post A Comment</h3>
+				<form class="quote" method="POST" action="">
+					<div>
+						<!-- <br/> is a line break -->
+						<label>First Name</label><br/>
+						<input id= "firstName2" type="Name" placeholder="Enter First Name">
+					</div>
+						
+					<div>
+						<label>Phone Number</label><br/>
+						<input id= "PhoneNumber" type="Name" placeholder="Enter Phone Number">
+					</div>
+							
+					<div>
+						<label>Email</label><br/>
+						<input id="emailAddress" type="Email" placeholder="Enter Email Address">
+					</div>
+					
+					<div> 
+						<label>Message</label><br/>
+						<textarea id="comment-area"></textarea>
+					</div>
+					<button type="submit" id="server-button2">Send</button>
+					
+				<h1 class ="todos-subtitle">Recieved Message</h1>
+				<div id= "comments"></div>
+				</form>
+			</div>
+		</div>
+		
+    <footer>
+        <p>Albany Music Reviews, Copyright &copy; 2019</p>
+    </footer>
+     
+	 <script src="assets/js/table.js"></script>
+	 <script src="assets/js/clickrating.js"></script>
+	 <script src="assets/js/comment.js"></script>  
+</body>
+</html>

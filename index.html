@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name= "viewport" content= "width=device-width">
+	<meta name= "description" content= "Music Reviews">
+	<meta name= "keywords" content= "music, trending music, top100, artists">
+	<meta name= "author" content="Albert Jordaan">
+
+	<title>Albany Music Reviews | Home Page</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="branding">
+
+				<!--SPAN IS AN INLINE ELEMENT, it allows to split text and adjust individually-->
+				<img id="logo" src="assets/img/logo.png" alt=err>
+				<h1><span class="highlight">Albany</span> Music Reviews</h1>
+			</div>
+
+			<nav>
+				<ul>
+					<!-- The current class within css highlights the currently chosen page title-->
+					<li class="current"><a href="index.html">Home</a></li>
+
+					<!--dropdown 1-->
+					<li class="dropdown"><a href="#">New Music</a>
+						<ul class="dropdown-content">
+							<li><a href="itempage1.html">Rap</a></li>
+							<li><a href="#">hip hop (coming soon)</a></li>
+						</ul>
+					</li>
+					
+
+					<!--dropdown 2-->
+					<li class="dropdown"><a href="#">Trending Music</a>
+						<ul class="dropdown-content">
+							<li><a href="itempage2.html">Tyler The Creator</a></li>
+							<li><a href="#">J. Cole (coming soon)</a></li>
+							<li><a href="#">Drake (coming soon)</a></li>
+						</ul>
+					</li>
+					
+
+					<li><a href="contacts.html">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="showcase">
+		<div class="container">
+			<h1 class="homepagetitle"> Music Reviews</h1>
+			<p>
+			We keep you updated with the latest music release reviews and upcoming artists
+			</p>
+		</div>
+	</section>
+
+	<section id="newsletter">
+		<div class= "container">
+			<h1>Subscribe to Our Free Music Newsletter</h1>
+		
+		<form method="post" action="#">
+			<input name="Email" type="email" placeholder="Enter Email...">
+			<button type="submit" class="button1">Subscribe</button> 
+		</form>
+		</div>
+	</section>
+
+	<section id="boxes">
+		<div class="container">
+			<div class="box">
+				<img src="assets/img/jcole.jpg" alt=err>
+				<h3>J.Cole</h3>
+				<h3 class="songtitle">🔥 Middle Child 🔥</h3>
+				<p>
+				J.Cole has returned with new track ‘Middle Child’ – and it’s a contemplative look at what happens when you’re caught in the middle of two generations.
+				</p>
+			</div>
+			<div class="box">
+				<img src="assets/img/tyler.jpg" alt=err>
+				<h3>Tyler the Creator</h3>
+				<h3 class="songtitle">🔥 A Boy Is A Gun 🔥 </h3>
+				<p>
+				IGOR is an album brimming with dense textures and flourishes of transcendent beauty. Sonically, it feels like Tyler, the Creator has reached another level as a composer.
+				</p>
+			</div>
+			<div class="box">
+				<img src="assets/img/drake.jpg" alt=err>
+				<h3>Drake</h3>
+				<h3 class="songtitle">🔥 Nice For What 🔥</h3>
+				<p>
+				Drake’s new song, “Nice for What,” is engineered for a good time. it’s the kind of beat that stands alone as a fantastic piece of hip-hop machinery. 
+				</p>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p>Albany Music Reviews, Copyright &copy; 2019</p>
+	</footer>
+
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

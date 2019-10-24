@@ -1,0 +1,271 @@
+body{
+	font: 15px/1.5 Helvetica, Arial, sans-serif;
+	/* --long way as top line--
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:15px;
+	line-height:1.5;
+	*/
+	padding: 0px;
+	margin: 0px;
+	background-color: #f4f4f4;
+}
+/*GLOBAL*/
+.container{
+	width:80%;
+	margin:auto;
+	/* We set the width to 80% but we don't want it to stay left so we use auot margin*/
+	overflow: hidden;
+
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+.button1{
+	border-color: #f4f4f4;
+	height: 38px;
+	background: #e8491d;
+	color: #fff;
+}
+.dark{
+	padding: 15px;
+	background:#253665;
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/* HEADER */
+header{
+	background: #253665;
+	color: #fff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #e8491d 3px solid;
+    /* background: url('../img/flowerheader.jpg') repeat 0 -385px; */
+    background-color: #06a072;
+	
+}
+header a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	display: block;
+}
+header a:hover{
+	background: #06a072;
+}
+header ul{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+header ul::after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.dropdown{
+	margin: 0;
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+.dropdown-content{
+	text-decoration: underline;
+	max-width: 150px;
+	word-wrap: break-word;
+	display: none;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	box-shadow: 0px 8px 16px 0px rgba(2,2,2,2.2);
+	z-index: 1;
+}
+.dropdown li a:nth-child(odd){
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+}	
+
+header li{
+	display: inline;
+	padding: 0px 20px 0 20px;
+}
+header #branding{
+	display: flex;
+	justify-content: flex-start;
+}
+header #branding h1{
+	margin: 0;
+}
+header nav{
+	margin-top: -30px;
+	margin-right: 0;
+}
+header .highlight, header .current a{
+    /* color: #e8491d; */
+    color: #191102;
+	font-weight: bold;
+}
+header a:hover{
+	color: #000;
+	font-weight: bold;
+	transition: 2s;
+}
+#logo{
+	float: left;
+	width: 100px;
+	position: absolute;
+	margin-left: -100px;
+	margin-top: -15px;
+	
+}
+
+/* SHOWCASE */
+#showcase{
+	min-height: 400px;
+	/* the 0 -400px is x-axis and y-axis movement of the img*/
+    /* background: url('../img/showcase.jpg') no-repeat 0 -400px; */
+    background-color: #F58A07;
+	text-align: center;
+	color: #fff;
+}
+#showcase h1{
+	margin-top: 100px;
+	margin-bottom: 10px;
+	font-size: 55px;
+}
+.homepagetitle{
+    color: #191102;
+}
+
+/* NEWSLETTER */
+#showcase p{
+	font-size: 20px;
+}
+#newsletter{
+	padding: 15px;
+	color: #fff;
+	background: #253665;
+}
+#newsletter h1{
+	float: left;
+}
+#newsletter form{
+	float: right;
+	margin-top: 20px;
+}
+#newsletter input[type="email"]{
+	padding: 4px;
+	height: 20px;
+	width: 250px;
+}
+
+/* BOXES */
+#boxes{
+	margin-top: 20px;
+
+}
+#boxes .box{
+	float: left;
+	width: 30%;
+	padding: 10px;
+	text-align: center;
+}
+#boxes .box img{
+	width:250px;
+	height:250px
+}
+.box{
+    margin: 0px;
+}
+/* SIDEBAR */
+aside#sidebar{
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+}
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+	width: 90%;
+	padding:5px;
+}
+aside#sidebar .quote button{
+	width: 93.3%;
+}
+
+
+/* First article paragraph */
+article#main-col{
+	float: left;
+	width: 65%;
+}
+/* Services */
+ul#services li{
+	list-style: none;
+	padding: 20px;
+	border: #cccccc solid 1px;
+	margin-bottom: 5px;
+	background: #fff;
+}
+/* footer */
+footer{
+	padding: 20px;
+	margin-top: 20px;
+	color: #fff;
+	background-color: #e8491d;
+	text-align: center;
+}
+
+/* media queries */
+
+/*common size for tablet*/
+/*fixing size optimisations without flexbox*/
+@media(max-width: 768px){
+	header #branding,
+	header nav,
+	header nav li,
+	#newsletter h1,
+	#newsletter form,
+	#boxes .box,
+	article#main-col,
+	#logo,
+	article#sidebar{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	header{
+		padding-bottom: 20px; 
+	}
+	header nav{
+		margin-top: 30px;
+	}
+	header #branding h1{
+		width: 100%;
+		align-items: center;
+	}
+
+	#Showcase h1{
+		margin-top: 40px;
+	}
+	#newsletter button, .quote button{
+		display: block;
+		width: 100%
+	}
+	#newsletter form input[type="email"], .quote input, .quote textarea{
+		width:100%;
+		margin-bottom: 5px;
+	}
+	#logo{
+		width: 100px;
+		padding-left: 50px;;
+	}
+}
+
+
+
+
+
+	
